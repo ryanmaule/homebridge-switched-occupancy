@@ -37,7 +37,7 @@ OccupancySwitchAccessory.prototype.getSwitchState = function(callback) {
 OccupancySwitchAccessory.prototype.setSwitchState = function(state, callback) {
   this.switchState = state
 
-  // When we turn this on, we also want to turn on the motion sensor
+  // When we turn this on, we also want to turn on the occupancy sensor
   this.trigger()
   callback(null);
 }
@@ -53,9 +53,9 @@ OccupancySwitchAccessory.prototype.trigger = function() {
 OccupancySwitchAccessory.prototype.resetSensors = function(self) {
   self.switchState = 0
   
-  self.motionSensorState = 0
+  self.occupancySensorState = 0
   self.switchService.setCharacteristic(Characteristic.On, Boolean(self.switchState));
-  self.motionSensorService.setCharacteristic(Characteristic.OccupancyDetected, Boolean(self.occupancySensorState));
+  self.occupancySensorService.setCharacteristic(Characteristic.OccupancyDetected, Boolean(self.occupancySensorState));
 }
 
 OccupancySwitchAccessory.prototype.getServices = function() {
