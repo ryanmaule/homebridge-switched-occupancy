@@ -1,20 +1,20 @@
-## Homebridge Motion Switch
+## Homebridge Occupancy Switch
 
-Can be used to trigger a motion detected event when a switch is turned on, via Siri for example, similar to https://twitter.com/viticci/status/961751917973180417 but within HomeKit only.
+Can be used to trigger a occupancy detected event when a switch is turned on, via Siri for example.
 
 #### Setup
 
-`npm install -g homebridge-motion-switch`
+`npm install -g homebridge-occupancy-switch`
 
 And add the following to the accessories list in your Homebridge config. Change names as you wish.
 
 ```
 {
-  "accessory": "Motion Switch",
-  "motion_sensor_name": "Motion Sensor",
-  "switch_name": "Motion Switch",
-  "name": "Motion Switch"
+  "accessory": "Occupancy Switch",
+  "motion_sensor_name": "Occupancy Sensor",
+  "switch_name": "Occupancyn Switch",
+  "name": "Occupancy Switch"
 }
 ```
 
-Then add it to HomeKit, once added, you will need to turn on Notifications for the motion sensor you just added.
+Then add it to HomeKit, once added, you will need to turn on Notifications for the Occupancy sensor you just added.
