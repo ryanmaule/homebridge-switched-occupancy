@@ -14,7 +14,7 @@ function OccupancySwitchAccessory(log, config) {
   this.switchState = false;
   this.occupancySensorState = false;
 
-  this.occupancySensorService = new Service.OccupancySensor(this.motionSensorName);
+  this.occupancySensorService = new Service.OccupancySensor(this.occupancySensorName);
   this.occupancySensorService
     .getCharacteristic(Characteristic.OccupancyDetected)
     .on('get', this.getOccupancySensorState.bind(this));
