@@ -1,6 +1,6 @@
 {
   "name": "homebridge-occupancy-switch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Occupancy Switch plugin for homebridge: https://github.com/nfarina/homebridge",
   "license": "ISC",
   "keywords": [
