@@ -11,8 +11,8 @@ And add the following to the accessories list in your Homebridge config. Change 
 ```
 {
   "accessory": "Occupancy Switch",
-  "motion_sensor_name": "Occupancy Sensor",
-  "switch_name": "Occupancyn Switch",
+  "occupancy_sensor_name": "Occupancy Sensor",
+  "switch_name": "Occupancy Switch",
   "name": "Occupancy Switch"
 }
 ```
