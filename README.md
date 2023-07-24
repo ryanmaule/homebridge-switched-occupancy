@@ -4,7 +4,7 @@ Can be used to trigger a occupancy detected event when a switch is turned on, vi
 
 #### Setup
 
-`npm install -g homebridge-occupancy-switch`
+`npm install -g homebridge-switched-occupancy`
 
 And add the following to the accessories list in your Homebridge config. Change names as you wish.
 
@@ -17,4 +17,4 @@ And add the following to the accessories list in your Homebridge config. Change 
 }
 ```
 
-Then add it to HomeKit, once added, you will need to turn on Notifications for the Occupancy sensor you just added.
+Unlike the homebridge-occupancy-switch plugin, there is no automatic reset.  The occupancy sensor will remain sync'd to the switch.
