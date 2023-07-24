@@ -45,8 +45,10 @@ OccupancySwitchAccessory.prototype.setSwitchState = function(state, callback) {
 OccupancySwitchAccessory.prototype.trigger = function() {
   if (this.switchState) {
     this.occupancySensorState = 1;
-    this.occupancySensorService.setCharacteristic(Characteristic.OccupancyDetected, Boolean(this.occupancySensorState));
+  } else {
+    this.occupancySensorState = 0;
   }
+  this.occupancySensorService.setCharacteristic(Characteristic.OccupancyDetected, Boolean(this.occupancySensorState));
 }
 
 OccupancySwitchAccessory.prototype.getServices = function() {
