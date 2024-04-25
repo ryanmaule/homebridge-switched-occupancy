@@ -1,4 +1,4 @@
-## Homebridge Occupancy Switch
+## Homebridge Switched Occupance
 
 Can be used to trigger a occupancy detected event when a switch is turned on, via Siri for example.
 
