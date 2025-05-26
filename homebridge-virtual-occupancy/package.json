@@ -1,0 +1,33 @@
+{
+  "name": "homebridge-virtual-occupancy",
+  "version": "1.0.0",
+  "description": "A Homebridge plugin for a virtual occupancy sensor controlled by a switch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/homebridge-virtual-occupancy.git"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "occupancy",
+    "virtual",
+    "switch"
+  ],
+  "author": "Your Name or Username",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/homebridge-virtual-occupancy/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/homebridge-virtual-occupancy#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "homebridge": ">=1.3.0"
+  },
+  "devDependencies": {
+    "homebridge": "^1.9.0"
+  }
+}
